@@ -19,21 +19,25 @@
   <meta name="author" content="LinHua">
   <meta name="keywords" content="">
   
-    <meta name="description" content="只是一个内心充满不甘的人。 不想埋没自己的才能。 个人计划： 在考研之余刷leetcode，把原来的安卓音视频播放器给做出来并完善好。 希望能将计算机考研408中有关的内容都与实际的工程或者招聘或者科研结合起来。">
+    <meta name="description" content="2、两数相加    这里特别需要注意的点其实就是 进位，它的逆序排序恰好方便了我们，链表最前面的是最低位，方便我们计算高位进位。 思路也很简单，一个进位的变量，同时遍历两个链表，并创建第三个链表的节点。 实现  当时写的时候发现了几个问题：  您的代码存在几个关键问题：  未初始化的指针：returnList 在第一次使用时未初始化，直接访问其 val 会导致未定义行为（如程序崩溃）。 错误的返回">
 <meta property="og:type" content="article">
-<meta property="og:title" content="林华的学习博客">
-<meta property="og:url" content="http://example.com/2025/02/17/%E6%88%91%E7%9A%84%E5%86%85%E5%BF%83/index.html">
+<meta property="og:title" content="2、两数相加">
+<meta property="og:url" content="http://example.com/2025/03/08/leetcode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/2_%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/index.html">
 <meta property="og:site_name" content="林华的学习博客">
-<meta property="og:description" content="只是一个内心充满不甘的人。 不想埋没自己的才能。 个人计划： 在考研之余刷leetcode，把原来的安卓音视频播放器给做出来并完善好。 希望能将计算机考研408中有关的内容都与实际的工程或者招聘或者科研结合起来。">
+<meta property="og:description" content="2、两数相加    这里特别需要注意的点其实就是 进位，它的逆序排序恰好方便了我们，链表最前面的是最低位，方便我们计算高位进位。 思路也很简单，一个进位的变量，同时遍历两个链表，并创建第三个链表的节点。 实现  当时写的时候发现了几个问题：  您的代码存在几个关键问题：  未初始化的指针：returnList 在第一次使用时未初始化，直接访问其 val 会导致未定义行为（如程序崩溃）。 错误的返回">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-02-17T15:36:51.150Z">
-<meta property="article:modified_time" content="2025-02-19T14:00:27.306Z">
+<meta property="og:image" content="https://picgo-1326755989.cos.ap-nanjing.myqcloud.com/pic/image-20250307234338707.png">
+<meta property="og:image" content="https://picgo-1326755989.cos.ap-nanjing.myqcloud.com/pic/image-20250307234534945.png">
+<meta property="og:image" content="https://picgo-1326755989.cos.ap-nanjing.myqcloud.com/pic/image-20250313002416034.png">
+<meta property="article:published_time" content="2025-03-07T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-03-12T16:28:41.739Z">
 <meta property="article:author" content="LinHua">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://picgo-1326755989.cos.ap-nanjing.myqcloud.com/pic/image-20250307234338707.png">
   
   
   
-  <title>林华的学习博客</title>
+  <title>2、两数相加 - 林华的学习博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -187,7 +191,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="2、两数相加"></span>
           
         </div>
 
@@ -198,8 +202,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-02-17 23:36" pubdate>
-          2025年2月17日 晚上
+        <time datetime="2025-03-08 00:00" pubdate>
+          2025年3月8日 凌晨
         </time>
       </span>
     
@@ -210,7 +214,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          87 字
+          598 字
         
       </span>
     
@@ -221,7 +225,7 @@
         
         
         
-          1 分钟
+          5 分钟
         
       </span>
     
@@ -258,16 +262,43 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">2、两数相加</h1>
             
             
               <div class="markdown-body">
                 
-                <p>只是一个内心充满不甘的人。</p>
-<p>不想埋没自己的才能。</p>
-<p>个人计划：</p>
-<p>在考研之余刷leetcode，把原来的安卓音视频播放器给做出来并完善好。</p>
-<p>希望能将计算机考研408中有关的内容都与实际的工程或者招聘或者科研结合起来。</p>
+                <h2 id="2、两数相加"><a href="#2、两数相加" class="headerlink" title="2、两数相加"></a>2、两数相加</h2><img src="https://picgo-1326755989.cos.ap-nanjing.myqcloud.com/pic/image-20250307234338707.png" srcset="/img/loading.gif" lazyload alt="image-20250307234338707" style="zoom: 67%;" />
+
+<img src="https://picgo-1326755989.cos.ap-nanjing.myqcloud.com/pic/image-20250307234534945.png" srcset="/img/loading.gif" lazyload alt="image-20250307234534945" style="zoom:50%;" />
+
+<p>这里特别需要注意的点其实就是 <strong>进位</strong>，它的逆序排序恰好方便了我们，链表最前面的是最低位，方便我们计算高位进位。</p>
+<p>思路也很简单，一个进位的变量，同时遍历两个链表，并创建第三个链表的节点。</p>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><img src="https://picgo-1326755989.cos.ap-nanjing.myqcloud.com/pic/image-20250313002416034.png" srcset="/img/loading.gif" lazyload alt="image-20250313002416034" style="zoom:50%;" />
+
+<p>当时写的时候发现了几个问题：</p>
+<blockquote>
+<p>您的代码存在几个关键问题：</p>
+<ol>
+<li><strong>未初始化的指针</strong>：<code>returnList</code> 在第一次使用时未初始化，直接访问其 <code>val</code> 会导致未定义行为（如程序崩溃）。</li>
+<li><strong>错误的返回指针</strong>：循环中移动了 <code>returnList</code>，最终返回的是链表的末尾节点而非头节点。</li>
+<li><strong>未处理最后的进位</strong>：若循环结束后仍有进位，需额外添加节点。</li>
+</ol>
+</blockquote>
+<p>代码在最下方，包括我自己写的更正后的以及AI简化后的</p>
+<p>我自己总结一下：</p>
+<ol>
+<li>首先是指针没有初始化就直接访问 <code>returnList-&gt;val</code>，可能这段时间有点生疏了。<strong>代码不规范问题</strong></li>
+<li>然后就是创建完整个链表后直接返回了尾指针。。。正常的做法应该是留一个头指针备用返回的</li>
+<li>**个人觉得这是我算法层面的疏忽——补救也很简单，循环结束后加一段代码就ok了。**只是思考的时候完全没想到最后一轮循环进位的情况。。。</li>
+</ol>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>更正之后的代码，不够简洁</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><code class="hljs C++"><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">ListNode* <span class="hljs-title">addTwoNumbers</span><span class="hljs-params">(ListNode* l1, ListNode* l2)</span> </span>&#123;<br>        ListNode *dummy = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ListNode</span>(<span class="hljs-number">0</span>);<br>        ListNode *returnList = dummy;<br>        <span class="hljs-type">int</span> carry = <span class="hljs-number">0</span>;<br><br>        <span class="hljs-keyword">while</span>(l1 != <span class="hljs-literal">nullptr</span> || l2 != <span class="hljs-literal">nullptr</span>)&#123;<br>            <span class="hljs-comment">// 取出两个想加的值</span><br>            <span class="hljs-type">int</span> l1_num;<br>            <span class="hljs-type">int</span> l2_num;<br><br>            <span class="hljs-keyword">if</span>(l1 == <span class="hljs-literal">nullptr</span>)&#123;<br>                l1_num = <span class="hljs-number">0</span>;<br>            &#125;<span class="hljs-keyword">else</span>&#123;<br>                l1_num = l1-&gt;val;<br>                l1 = l1-&gt;next;<br>            &#125;<br><br>            <span class="hljs-keyword">if</span>(l2 == <span class="hljs-literal">nullptr</span>)&#123;<br>                l2_num = <span class="hljs-number">0</span>;<br>            &#125;<span class="hljs-keyword">else</span>&#123;<br>                l2_num = l2-&gt;val;<br>                l2 = l2-&gt;next;<br>            &#125;<br><br>            <span class="hljs-type">int</span> add_end = (l1_num + l2_num + carry) % <span class="hljs-number">10</span>;<br>            carry = (l1_num + l2_num + carry)/<span class="hljs-number">10</span>;<br><br>            returnList-&gt;next = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ListNode</span>(add_end);<br>            returnList = returnList-&gt;next;<br>        &#125;<br><br>        <span class="hljs-keyword">if</span> (carry &gt; <span class="hljs-number">0</span>) &#123;<br>            returnList-&gt;next = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ListNode</span>(carry);<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> dummy-&gt;next;<br>    &#125;<br>&#125;;<br><br><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="简洁的代码"><a href="#简洁的代码" class="headerlink" title="简洁的代码"></a>简洁的代码</h3><p>简洁美是这个世界最伟大的东西</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">ListNode* <span class="hljs-title">addTwoNumbers</span><span class="hljs-params">(ListNode* l1, ListNode* l2)</span> </span>&#123;<br>        ListNode* dummy = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ListNode</span>(<span class="hljs-number">0</span>); <span class="hljs-comment">// 哑结点简化处理</span><br>        ListNode* current = dummy;<br>        <span class="hljs-type">int</span> carry = <span class="hljs-number">0</span>;<br>        <br>        <span class="hljs-keyword">while</span> (l1 || l2 || carry) &#123;<br>            <span class="hljs-type">int</span> n1 = l1 ? l1-&gt;val : <span class="hljs-number">0</span>;<br>            <span class="hljs-type">int</span> n2 = l2 ? l2-&gt;val : <span class="hljs-number">0</span>;<br>            <br>            <span class="hljs-type">int</span> sum = n1 + n2 + carry;<br>            carry = sum / <span class="hljs-number">10</span>;<br>            <br>            current-&gt;next = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ListNode</span>(sum % <span class="hljs-number">10</span>);<br>            current = current-&gt;next;<br>            <br>            <span class="hljs-keyword">if</span> (l1) l1 = l1-&gt;next;<br>            <span class="hljs-keyword">if</span> (l2) l2 = l2-&gt;next;<br>        &#125;<br>        <br>        <span class="hljs-keyword">return</span> dummy-&gt;next; <span class="hljs-comment">// 哑结点的next即真实头节点</span><br>    &#125;<br>&#125;;<br><br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
@@ -275,6 +306,27 @@
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/leetcode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/" class="category-chain-item">leetcode刷题记录</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
 </div>
@@ -285,8 +337,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>http://example.com/2025/02/17/我的内心/</div>
+      <div>2、两数相加</div>
+      <div>http://example.com/2025/03/08/leetcode刷题记录/2_两数相加/</div>
     </div>
     <div class="license-meta">
       
@@ -298,7 +350,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年2月17日</div>
+          <div>2025年3月8日</div>
         </div>
       
       
@@ -330,15 +382,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/03/07/leetcode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/1_%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/" title="1、两数之和">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">1、两数之和</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2025/03/07/leetcode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/1_%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/" title="1、两数之和">
+                        <span class="hidden-mobile">1、两数之和</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
